@@ -1,0 +1,91 @@
+{
+  "placements": [
+    {
+      "key": "shot_01_d0",
+      "start": 0.3,
+      "seconds": 3.48
+    },
+    {
+      "key": "shot_01_d1",
+      "start": 4.13,
+      "seconds": 1.55
+    },
+    {
+      "key": "shot_02_n0",
+      "start": 6.3,
+      "seconds": 3.18
+    },
+    {
+      "key": "shot_03_d0",
+      "start": 10.3,
+      "seconds": 2.76
+    },
+    {
+      "key": "shot_03_d1",
+      "start": 13.41,
+      "seconds": 2.02
+    },
+    {
+      "key": "shot_04_n0",
+      "start": 16.3,
+      "seconds": 5.44
+    },
+    {
+      "key": "shot_05_d0",
+      "start": 22.3,
+      "seconds": 3.74
+    },
+    {
+      "key": "shot_06_d0",
+      "start": 27.3,
+      "seconds": 4.21
+    },
+    {
+      "key": "shot_06_d1",
+      "start": 31.86,
+      "seconds": 2.17
+    },
+    {
+      "key": "shot_06_d2",
+      "start": 34.38,
+      "seconds": 2.97
+    },
+    {
+      "key": "shot_07_n0",
+      "start": 38.3,
+      "seconds": 6.8
+    },
+    {
+      "key": "shot_08_n0",
+      "start": 46.3,
+      "seconds": 5.44
+    },
+    {
+      "key": "shot_09_n0",
+      "start": 52.3,
+      "seconds": 2.92
+    },
+    {
+      "key": "shot_10_n0",
+      "start": 57.3,
+      "seconds": 8.92
+    },
+    {
+      "key": "shot_11_n0",
+      "start": 67.3,
+      "seconds": 6.09
+    },
+    {
+      "key": "shot_12_n0",
+      "start": 74.3,
+      "seconds": 7.38
+    },
+    {
+      "key": "shot_12_n1",
+      "start": 82.88,
+      "seconds": 2.43
+    }
+  ],
+  "overruns_s": {},
+  "total_s": 87.5
+}

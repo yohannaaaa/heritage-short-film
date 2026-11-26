@@ -1,0 +1,38 @@
+# FAILURES
+
+Real blockers from building this pipeline, in the order they happened. Edit the wording into your own and add anything I missed.
+
+## 1. Narration script ran silently and produced nothing
+- **What broke:** `python pipeline/narration.py --shot shot_06` printed nothing and `outputs/audio/` was never created.
+- **What I tried:** checked the venv, the storyboard validation and `.env`; all fine.
+- **Cause and fix:** `wc -l pipeline/narration.py` showed 0 lines: the file had been saved empty, so `main()` never ran. I pasted the code in again and re-ran it.
+- **Lesson:** check file length before debugging logic.
+
+## 2. Gemini TTS daily quota (HTTP 429)
+- **What broke:** the first full run produced 13 of 17 clips; the next run made only 1 more, and the rest failed with `429 You exceeded your current quota`.
+- **What I tried:** waited and re-ran (no progress, which showed it was a daily cap, not per-minute). Considered switching provider (Addis AI) but rejected it: a different API shape would have cost hours on deadline day.
+- **Fix:** switched `tts_model` to `gemini-3.8-flash-lite-tts`, which has a separate quota, for shots 10-12. Shots 1-9 stay on the full model.
+- **Side effect:** the cache key includes the model name, so changing the model would regenerate everything, hence `--shot` for the remaining shots. Two models now voice one film; I listened for differences (see EXPERIMENTS.md E1).
+
+## 3. Amharic speech was longer than the planned shots
+- **What broke:** the timing report flagged 7 shots where speech overran the shot; the radio cut came out 80.1s against a planned 73s.
+- **Fix:** lengthened shots 01, 03, 04, 06, 07, 10, 12 from measured audio, total 86s.
+- **Lesson:** narration length has to set shot length, not the reverse.
+
+## 4. Radio cut seemed to have no audio
+- **What I tried:** `ffprobe` showed an AAC track of 85.4s; `volumedetect` showed mean -20.1 dB, peak -1.0 dB.
+- **Cause:** the player/preview I used, not the file. It played in a proper player.
+- **Lesson:** measure the file before changing code.
+
+## 5. Music and tail cut off early (found while testing the assembly)
+- **What broke:** in a test the output's audio was 81.9s while the video was 88.5s.
+- **Cause:** `sidechaincompress` ends when its sidechain input (the voice bus) ends, so the music tail and end card were silent.
+- **Fix:** pad the voice bus to full length with `apad=whole_dur=<total>` before splitting it, in both `radio_cut.py` and `assemble.py`.
+
+## 6. FFmpeg build without subtitle/drawtext filters
+- **What broke:** the Homebrew FFmpeg 9.1 build on this Mac was configured without `libass` and `libfreetype`, so the `subtitles` and `drawtext` filters were unavailable.
+- **Fix:** render each subtitle card as a transparent PNG with Pillow and overlay it with `enable='between(t,a,b)'`; also write a `.srt`.
+
+## 7. Minor: LibreSSL warning
+- `urllib3` prints `NotOpenSSLWarning` because the system Python is built against LibreSSL. Harmless; calls still succeed.
+

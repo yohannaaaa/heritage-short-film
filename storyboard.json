@@ -1,0 +1,395 @@
+{
+  "title": "በአንድ ጠረጴዛ፣ በተለያዩ ዓለማት",
+  "english_title": "At One Table, In Different Worlds",
+  "language": "Amharic",
+  "subtitle_language": "English",
+  "total_duration_seconds": 86,
+  "aspect_ratios": [
+    "9:16",
+    "16:9"
+  ],
+  "visual_style": "Cinematic and realistic",
+  "narrative_perspective": "An adult remembering childhood family dinners",
+  "character_policy": "Fictionalized characters inspired by personal memories, not exact likenesses of real people",
+  "audio": {
+    "tts_model": "gemini-3.8-flash-lite-tts",
+    "narration": {
+      "voice": "Sulafat",
+      "style": "Warm, intimate, unhurried adult narrator remembering childhood. Nostalgic and gentle, storytelling rather than documentary."
+    },
+    "speakers": {
+      "mother": {
+        "voice": "Kore",
+        "style": "Warm, energetic, affectionate mother. Natural conversational Amharic."
+      },
+      "uncle": {
+        "voice": "Charon",
+        "style": "Playful, expressive, humorously complaining but clearly affectionate."
+      },
+      "sisters": {
+        "voice": "Aoede",
+        "style": "Bright, playful teenage girls speaking together."
+      }
+    }
+  },
+  "characters": [
+    {
+      "id": "mother",
+      "description": "A fictional Ethiopian mother in her early forties, warm and energetic, wearing modest everyday home clothing"
+    },
+    {
+      "id": "uncle",
+      "description": "A fictional Ethiopian uncle in his forties, friendly and expressive, with a humorous tendency to complain about fasting days"
+    },
+    {
+      "id": "older_sister",
+      "description": "A fictional Ethiopian teenage girl, playful and energetic"
+    },
+    {
+      "id": "younger_sister",
+      "description": "A fictional Ethiopian teenage girl, playful and expressive"
+    },
+    {
+      "id": "adult_narrator",
+      "description": "The adult version of one of the sisters, remembering the family's childhood moments"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot_01",
+      "scene": "childhood_memory",
+      "duration_seconds": 6,
+      "shot_reason": "Opens in the middle of an ordinary request so the audience recognises the moment before anything is explained. No narration: the phone call carries it.",
+      "visual_prompt": "Inside a cozy, lived-in Ethiopian family home in the late afternoon. A smartphone rests on a small table and begins ringing. Warm sunlight enters through the window. The home feels comfortable and lived in.",
+      "motion_prompt": "Begin with a close-up of the ringing phone. Slowly move toward one of the two teenage sisters picking it up.",
+      "narration_am": "",
+      "dialogue": [
+        {
+          "speaker": "mother",
+          "line": "ቤቱን አጽዱ። እንዲሁም ለነገ የሚሆነውን ስጋ ከፍሪጅ አውጡት።"
+        },
+        {
+          "speaker": "sisters",
+          "line": "እሺ እማዬ!"
+        }
+      ],
+      "audio_cues": [
+        "Phone ringing",
+        "Soft household ambience"
+      ],
+      "music_cue": "Gentle nostalgic instrumental music begins softly.",
+      "continuity_notes": "Keep the same cozy Ethiopian home and the same two teenage sisters throughout the childhood scenes."
+    },
+    {
+      "id": "shot_02",
+      "scene": "childhood_memory",
+      "duration_seconds": 4,
+      "shot_reason": "Shows the sisters saying yes with no intention of acting. This is the setup for the joke.",
+      "visual_prompt": "Two Ethiopian teenage sisters sitting comfortably on a couch watching a movie on television. They are laughing and completely relaxed in their cozy family living room.",
+      "motion_prompt": "A gentle camera movement across the couch, showing both sisters absorbed in the movie.",
+      "narration_am": "እኛ ግን በፊልማችን ተውጠን ነበር።",
+      "dialogue": [],
+      "audio_cues": [
+        "Television movie ambience",
+        "Sisters laughing"
+      ],
+      "music_cue": "Warm playful instrumental music continues.",
+      "continuity_notes": "Maintain the same clothing, hairstyle, ages, and living room as shot_01."
+    },
+    {
+      "id": "shot_03",
+      "scene": "childhood_memory",
+      "duration_seconds": 6,
+      "shot_reason": "The turn of the joke: the sisters lie while the audience sees they have done nothing. Dialogue-only keeps it quick.",
+      "visual_prompt": "A teenage Ethiopian girl holding a smartphone and suddenly looking shocked. Her sister looks toward her, realizing something is wrong. Cozy living room in the background.",
+      "motion_prompt": "Start with a close-up of the phone, then cut to the two sisters exchanging a worried look.",
+      "narration_am": "",
+      "dialogue": [
+        {
+          "speaker": "mother",
+          "line": "ልጆቼ፣ ተጠናቀቀ? ቅርብ ነን።"
+        },
+        {
+          "speaker": "sisters",
+          "line": "አዎ እማዬ! እየጨረስን ነው!",
+          "style": "Nervous, panicked, trying to sound calm. Quick and slightly breathless."
+        }
+      ],
+      "audio_cues": [
+        "Phone ringing",
+        "Brief silence after the question"
+      ],
+      "music_cue": "Music pauses briefly to emphasize the sisters' reaction.",
+      "continuity_notes": "The second phone call comes from the same mother. The sisters are still in the same home."
+    },
+    {
+      "id": "shot_04",
+      "scene": "childhood_memory",
+      "duration_seconds": 6,
+      "shot_reason": "The comic peak of the memory: pace and music speed up so the viewer laughs with us.",
+      "visual_prompt": "Two teenage sisters frantically cleaning a cozy Ethiopian living room. One picks up objects and arranges cushions while the other rushes to the refrigerator to take out a wrapped portion of meat for tomorrow.",
+      "motion_prompt": "Use energetic quick cuts showing the sisters rushing between the living room and refrigerator.",
+      "narration_am": "ያኔ ነው በድንገት የተነሳነው። ማጽዳት፣ መሮጥ፣ ሁሉም በአንድ ጊዜ!",
+      "dialogue": [],
+      "audio_cues": [
+        "Fast footsteps",
+        "Objects being moved",
+        "Refrigerator opening and closing"
+      ],
+      "music_cue": "Playful music becomes faster and more energetic.",
+      "continuity_notes": "Keep the same sisters and house. The meat is being prepared for tomorrow, not for today's dinner."
+    },
+    {
+      "id": "shot_05",
+      "scene": "childhood_memory",
+      "duration_seconds": 5,
+      "shot_reason": "Pays off the setup with the reversal (parents fresher than the kids) and introduces mother and uncle on screen.",
+      "visual_prompt": "A fictional Ethiopian mother and uncle enter their family home wearing modest gym clothes. They look energetic and refreshed. Two teenage sisters sit exhausted after cleaning. The mother begins preparing a quick dinner.",
+      "motion_prompt": "Show the mother and uncle entering through the front door, then cut to the exhausted sisters looking at them in disbelief.",
+      "narration_am": "",
+      "dialogue": [
+        {
+          "speaker": "mother",
+          "line": "እናንተ ምን ሆናችሁ? እኛ ከጂም መጥተን እንኳ አልደከመንም!",
+          "style": "Playful, teasing, full of energy."
+        }
+      ],
+      "audio_cues": [
+        "Front door opening",
+        "Family greetings",
+        "Kitchen activity"
+      ],
+      "music_cue": "Music returns to a warm, playful mood.",
+      "continuity_notes": "Mother and uncle must remain visually consistent in all subsequent shots."
+    },
+    {
+      "id": "shot_06",
+      "scene": "childhood_memory",
+      "duration_seconds": 11,
+      "shot_reason": "The emotional anchor of the film: the shared tiri, the fasting-day joke and the laughter that shot_12 will echo.",
+      "visual_prompt": "A warm Ethiopian family dinner. Mother, uncle, and two teenage sisters sit together around a large shared traditional metal tray called a tiri, containing shiro and injera. Everyone is eating from the shared tray, laughing and enjoying the meal. The uncle has a humorous complaining expression.",
+      "motion_prompt": "Begin with a close-up of shiro and injera on the tiri. Move to hands sharing injera, then show the uncle complaining and the sisters laughing.",
+      "narration_am": "",
+      "dialogue": [
+        {
+          "speaker": "uncle",
+          "line": "እንደገና ረቡዕ! ስጋ ባይኖር እንኳ እንዴት ይሆናል?"
+        },
+        {
+          "speaker": "sisters",
+          "line": "ጥረግ አርገህ ትበላለህ!",
+          "style": "Teasing, laughing together."
+        },
+        {
+          "speaker": "uncle",
+          "line": "እንግዲህ የእናታችሁን ምግብ እንዴት ልተው!"
+        }
+      ],
+      "audio_cues": [
+        "Family laughter",
+        "Hands touching the shared tray",
+        "Natural dinner conversation"
+      ],
+      "music_cue": "Warm emotional music with a light playful quality. Let the laughter be clearly audible.",
+      "continuity_notes": "The meal is shiro and injera. It is Wednesday. The uncle loves the mother's cooking despite his complaints."
+    },
+    {
+      "id": "shot_07",
+      "scene": "passage_of_time",
+      "duration_seconds": 8,
+      "shot_reason": "Compresses years into seconds using images, not explanation. Shows nobody chose to drift apart.",
+      "visual_prompt": "A cinematic montage of the two sisters growing older. Show a family photograph, a suitcase being packed, a wedding photograph, and the sisters beginning independent adult lives. Keep the visuals culturally grounded and realistic.",
+      "motion_prompt": "Use gentle dissolves between photographs and scenes. Gradually transition from warm childhood colors to more neutral adult-life colors.",
+      "narration_am": "ጊዜ አለፈ። አደግን። እያንዳንዳችንም የራሳችንን ሕይወት መምራት ጀመርን።",
+      "dialogue": [],
+      "audio_cues": [
+        "Soft room ambience",
+        "Subtle transition sound"
+      ],
+      "music_cue": "The playful music becomes slower and more reflective.",
+      "continuity_notes": "The adult characters should clearly resemble older versions of the childhood characters without copying any real person's likeness."
+    },
+    {
+      "id": "shot_08",
+      "scene": "passage_of_time",
+      "duration_seconds": 6,
+      "shot_reason": "The empty chair is the quietest image of change; the narration says the family is still one, so it is not blame.",
+      "visual_prompt": "The familiar childhood family dining room, now quiet. A large dining table and an empty chair are visible. Family photographs remain on the wall. The room looks familiar but less lively.",
+      "motion_prompt": "Slowly move across the empty dining table and settle on an empty chair.",
+      "narration_am": "ቤተሰቡ አሁንም አንድ ነበር፤ ግን እንደ ቀድሞው መገናኘት አልቻልንም።",
+      "dialogue": [],
+      "audio_cues": [
+        "Soft room tone",
+        "Subtle ambient silence"
+      ],
+      "music_cue": "Reflective music continues with more space and fewer instruments.",
+      "continuity_notes": "This should be recognizable as the same home from the childhood scenes."
+    },
+    {
+      "id": "shot_09",
+      "scene": "present_day",
+      "duration_seconds": 5,
+      "shot_reason": "Establishes the present dinner as the mirror of shot_06 before the contrast is shown.",
+      "visual_prompt": "A modern Ethiopian family gathering around a dining table. The adult versions of the sisters, mother, and uncle are present. Food is served, but the atmosphere is quieter than the childhood dinner.",
+      "motion_prompt": "Use a wide establishing shot, slowly moving toward the dining table.",
+      "narration_am": "አሁንም አንዳንድ ጊዜ እንሰበሰባለን።",
+      "dialogue": [],
+      "audio_cues": [
+        "Quiet dining ambience",
+        "Soft phone notifications"
+      ],
+      "music_cue": "Music becomes restrained and subdued.",
+      "continuity_notes": "Use recognizable fictional adult versions of the childhood family characters."
+    },
+    {
+      "id": "shot_10",
+      "scene": "present_day",
+      "duration_seconds": 10,
+      "shot_reason": "Individual framing shows the disconnection person by person, without judging technology.",
+      "visual_prompt": "A series of cinematic close-up views of different adult family members at the dinner table. One person answers work emails on a laptop, another attends a virtual meeting, another scrolls through a smartphone, and someone sends messages. Each person is occupied with a separate digital activity.",
+      "motion_prompt": "Use individual close-ups and deliberate cuts between screens, faces, and hands. Avoid showing real personal information on devices.",
+      "narration_am": "ግን አንዱ በስልኩ፣ ሌላው በሥራው፣ ሌላው በስብሰባው... ሁላችንም በየራሳችን ነገር ተጠምደናል።",
+      "dialogue": [],
+      "audio_cues": [
+        "Soft keyboard typing",
+        "Subtle notification sounds",
+        "Distant virtual meeting audio"
+      ],
+      "music_cue": "Minimal, reflective music with subtle tension.",
+      "continuity_notes": "Each person should appear absorbed in a different activity. Avoid making the scene look exaggerated or unnatural."
+    },
+    {
+      "id": "shot_11",
+      "scene": "present_day",
+      "duration_seconds": 7,
+      "shot_reason": "Same composition as shot_06 on purpose, so the viewer makes the comparison themselves. Title idea lands here.",
+      "visual_prompt": "A wide cinematic view of the whole family sitting around the same dining table. Everyone is physically together but looking at their own screens. Nobody is actively talking. The shared food is in the center of the table.",
+      "motion_prompt": "Slowly pull the camera back, revealing the distance between people despite their physical closeness.",
+      "narration_am": "በአንድ ጠረጴዛ ዙሪያ ተቀምጠናል። ግን ሀሳባችን ሁሉ በየራሱ ቦታ ነው።",
+      "dialogue": [],
+      "audio_cues": [
+        "Quiet room ambience",
+        "Faint electronic sounds"
+      ],
+      "music_cue": "Music becomes very soft, leaving room for silence.",
+      "continuity_notes": "The composition should visually echo the childhood shared-tray dinner in shot_06."
+    },
+    {
+      "id": "shot_12",
+      "scene": "emotional_ending",
+      "duration_seconds": 12,
+      "shot_reason": "Ends on a question, not a lesson. The echo of shot_06 laughter is the emotional payoff.",
+      "visual_prompt": "An adult Ethiopian woman at the family dining table slowly looks up from her phone and observes the family around her. Her expression is thoughtful and nostalgic. The others remain quietly occupied. The camera slowly pulls away from the table.",
+      "motion_prompt": "Begin with a close-up of the adult narrator's thoughtful expression. Briefly transition to a subtle memory-like image of the childhood family laughing around the tiri, then return to the present-day dinner and slowly pull away.",
+      "narration_am": "አንዳንድ ጊዜ የቀድሞው ሳቅ ይናፍቀኛል። ያኔ አብረን የነበርንባቸው ቀናት...\nአሁንስ... በእውነት አብረን ነን?",
+      "dialogue": [],
+      "audio_cues": [
+        "Brief echo of childhood family laughter",
+        "Gradual return to quiet room ambience"
+      ],
+      "music_cue": "A soft emotional musical resolution, fading into silence.",
+      "continuity_notes": "Do not add a lecture or explicit call to action. Let the final image and silence carry the emotional meaning."
+    }
+  ],
+  "visual": {
+    "image_model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "reference_size": 512,
+    "candidates": 2,
+    "base_seed": 2026,
+    "same_seed": true,
+    "daily_neuron_cap": 8500,
+    "anchors": {
+      "childhood_memory": "shot_06",
+      "passage_of_time": "shot_06",
+      "present_day": "shot_11",
+      "emotional_ending": "shot_11"
+    },
+    "style_blocks": {
+      "childhood_memory": "Cinematic realistic film still, natural skin texture, 35mm film grain, shallow depth of field, warm golden amber light, cozy lived-in Ethiopian family home, genuine candid expressions.",
+      "passage_of_time": "Cinematic realistic film still, soft light fading from warm amber toward neutral tones, quiet nostalgic mood, shallow depth of field, natural textures.",
+      "present_day": "Cinematic realistic film still, cooler neutral lighting, quiet modern Ethiopian home, muted colours, calm composition, natural skin texture, realistic and comfortable, not gloomy.",
+      "emotional_ending": "Cinematic realistic film still, soft neutral-to-warm light, intimate framing, thoughtful nostalgic expression, shallow depth of field, natural skin texture."
+    },
+    "common_suffix": "Subject centred in the frame with generous margins so the image can be cropped to vertical and horizontal. No text, no captions, no logos, no watermark.",
+    "references": {
+      "mother": {
+        "lock": "a fictional Ethiopian woman in her early forties with warm brown skin, shoulder-length dark curly hair and kind expressive eyes",
+        "prompt": "Head-and-shoulders character reference portrait of a fictional Ethiopian woman in her early forties with warm brown skin, shoulder-length dark curly hair and kind expressive eyes, warm energetic smile, modest everyday home clothing, plain soft background, front-facing, natural light, realistic photo."
+      },
+      "uncle": {
+        "lock": "a fictional Ethiopian man in his forties with brown skin, short dark hair, a short neat beard and a friendly expressive face",
+        "prompt": "Head-and-shoulders character reference portrait of a fictional Ethiopian man in his forties with brown skin, short dark hair, a short neat beard and a friendly expressive face, casual everyday shirt, plain soft background, front-facing, natural light, realistic photo."
+      },
+      "sisters": {
+        "lock": "two fictional Ethiopian teenage sisters, the older with long braided hair and the younger with a short curly afro, both with warm brown skin",
+        "prompt": "Character reference photo of two fictional Ethiopian teenage sisters, the older with long braided hair and the younger with a short curly afro, both with warm brown skin, standing close side by side, playful and energetic, casual everyday clothes, plain soft background, faces clearly visible, front-facing, natural light, realistic photo."
+      },
+      "adult_sisters": {
+        "from": [
+          "sisters"
+        ],
+        "lock": "the same two sisters as adults in their late twenties, the older with long braided hair and the younger with a short curly afro, both with warm brown skin",
+        "prompt": "Using image 0 for identity: the same two sisters as adults in their late twenties, the older with long braided hair and the younger with a short curly afro, both with warm brown skin, standing close side by side, modern casual clothes, plain soft background, faces clearly visible, front-facing, natural light, realistic photo."
+      },
+      "home": {
+        "prompt": "Interior of a cozy lived-in Ethiopian family home: living room with a couch and television, a dining area with a large table, family photographs on the wall, warm afternoon light, no people, realistic photo."
+      }
+    },
+    "shot_refs": {
+      "shot_01": [
+        "home"
+      ],
+      "shot_02": [
+        "sisters",
+        "home"
+      ],
+      "shot_03": [
+        "sisters",
+        "home"
+      ],
+      "shot_04": [
+        "sisters",
+        "home"
+      ],
+      "shot_05": [
+        "mother",
+        "uncle",
+        "sisters"
+      ],
+      "shot_06": [
+        "mother",
+        "uncle",
+        "sisters"
+      ],
+      "shot_07": [
+        "sisters",
+        "adult_sisters"
+      ],
+      "shot_08": [
+        "home"
+      ],
+      "shot_09": [
+        "mother",
+        "uncle",
+        "adult_sisters"
+      ],
+      "shot_10": [
+        "adult_sisters",
+        "uncle"
+      ],
+      "shot_11": [
+        "mother",
+        "uncle",
+        "adult_sisters"
+      ],
+      "shot_12": [
+        "adult_sisters",
+        "home"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "shot_01": {
+    "shot_seconds": 5,
+    "audio_seconds": 5.68
+  },
+  "shot_02": {
+    "shot_seconds": 4,
+    "audio_seconds": 3.48
+  },
+  "shot_03": {
+    "shot_seconds": 5,
+    "audio_seconds": 5.43
+  },
+  "shot_04": {
+    "shot_seconds": 5,
+    "audio_seconds": 5.74
+  },
+  "shot_05": {
+    "shot_seconds": 5,
+    "audio_seconds": 4.04
+  },
+  "shot_06": {
+    "shot_seconds": 9,
+    "audio_seconds": 10.35
+  },
+  "shot_07": {
+    "shot_seconds": 7,
+    "audio_seconds": 7.1
+  },
+  "shot_08": {
+    "shot_seconds": 6,
+    "audio_seconds": 5.74
+  },
+  "shot_09": {
+    "shot_seconds": 5,
+    "audio_seconds": 3.22
+  },
+  "shot_10": {
+    "shot_seconds": 7,
+    "audio_seconds": 9.22
+  },
+  "shot_11": {
+    "shot_seconds": 7,
+    "audio_seconds": 6.39
+  },
+  "shot_12": {
+    "shot_seconds": 8,
+    "audio_seconds": 11.31
+  }
+}

@@ -1,0 +1,58 @@
+# EXPERIMENTS
+
+Format: hypothesis -> change -> result -> decision. Entries marked **[RUN]** need you to run the small test and write the real result; the commands are given and each costs little. Do not leave placeholders in the submitted version: delete an entry you did not run.
+
+Seeds are in `storyboard.json` (`visual.base_seed` = 2026; shared across shots). Every call is in `runs.jsonl`.
+
+## E1. Full TTS model vs flash-lite TTS model for Amharic (DONE, finish the result)
+- **Hypothesis:** the lite model sounds as natural as the full model for Amharic narration.
+- **Change:** shots 1-9 used `gemini-3.8-flash-tts`; shots 10-12 used `gemini-3.8-flash-lite-tts` after the daily quota ran out (FAILURES #2). To compare directly: `python pipeline/narration.py --shot shot_09 --force` after setting the model to lite, listen to old vs new, restore the model.
+- **Result:** [FILL: what you heard: pronunciation, pacing, voice match with the other shots; what a native speaker said].
+- **Decision:** [FILL: kept lite for 10-12 / regenerated all with one model].
+
+## E2. Planned shot lengths vs measured speech (DONE)
+- **Hypothesis:** a 73s plan fits the Amharic script.
+- **Change:** generated all lines, then built the radio cut with timing measured per line.
+- **Result:** the radio cut was 80.1s; 7 of 12 shots overran (shot 12 drifted by 5.25s cumulatively). Measured speech: shot 06 10.3s, shot 07 7.1s, shot 10 9.2s, shot 12 11.3s.
+- **Decision:** set shot lengths from the measurements; the film is 86s (plus a 2.5s end card).
+
+## E3. Two image candidates per shot instead of one (DONE, from selected.json)
+- **Hypothesis:** generating 2 candidates per shot gives a better pick than a single image.
+- **Change:** `visual.candidates = 2` (about 2x the neurons, ~3,200 total instead of ~1,600).
+- **Result:** I chose candidate 1 over candidate 0 for 4 of 12 shots (06, 07, 09, 12), i.e. one shot in three. [FILL: what was wrong with the rejected ones: faces, hands, composition].
+- **Decision:** worth the extra ~1,600 neurons for the shots that matter most.
+
+## E4. Reference images in the prompt vs prompt-only [RUN]
+- **Hypothesis:** passing the character references makes the mother, uncle and sisters recognisably the same across shots.
+- **Change:** generate shot_05 once with `shot_refs` emptied for it (copy the storyboard first) and compare with the normal result. About 120 neurons.
+- **Result:** [FILL: describe the faces/clothing differences you see].
+
+## E5. Anchor frame on vs off [RUN]
+- **Hypothesis:** adding the approved `shot_06` frame as an extra input image improves continuity of room and clothing in other childhood shots.
+- **Change:** regenerate `shot_02` with `visual.anchors` set to `{}` using a temporary copy of the storyboard, compare with the normal one.
+- **Result:** [FILL].
+
+## E6. Same seed across shots vs different seed per shot [RUN]
+- **Hypothesis:** one shared seed makes shots look more alike.
+- **Change:** set `visual.same_seed` to `false` and regenerate `shot_03` with `--force`; compare with the same-seed image.
+- **Result:** [FILL].
+
+## E7. Ducking strength [RUN, FFmpeg only, no cost]
+- **Hypothesis:** the starting values from the guide (threshold 0.02, ratio 6, attack 300 ms, release 1500 ms) keep the narration clear without pumping.
+- **Change:** try ratio 3 and ratio 10 in `assemble.py`; listen on phone speaker and headphones.
+- **Result:** [FILL: what you heard; which value you kept].
+
+## E8. Loudness target [RUN, no cost]
+- **Hypothesis:** single-pass `loudnorm` to -14 LUFS / -1 dB true peak is accurate enough.
+- **Change:** measure the final file: `ffmpeg -i outputs/final/film_9x16.mp4 -af ebur128=peak=true -f null - 2>&1 | tail -12`.
+- **Result:** [FILL: integrated LUFS and true peak]. The radio cut measured mean -20.1 dB, max -1.0 dB with `volumedetect`.
+
+## E9. Three music candidates (ACE-Step) [RUN]
+- **Hypothesis:** a caption with acoustic guitar, soft piano and a pentatonic feel gives a score that sits under Amharic narration without a strong lead melody.
+- **Change:** generate 3 candidates with different seeds, same caption, instrumental, ~70 BPM, 60-90s.
+- **Result:** [FILL: one line per candidate and why you chose one].
+
+## E10. Subtitle line length [RUN, no cost]
+- **Hypothesis:** 34 characters per line (vertical) and 46 (horizontal), at most 2 lines per card, stays readable and inside the safe area.
+- **Change:** watch the vertical cut on a phone; try 30 and 38.
+- **Result:** [FILL].
